@@ -19,8 +19,7 @@ export default function ContactPage() {
           }}></div>
         </div>
         
-        {/* Geometric Shapes */}
-        <div className="absolute top-20 right-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-float-slow"></div>
+        {/* Clean background for hero section */}
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Get In Touch</span>

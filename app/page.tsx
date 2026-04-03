@@ -14,13 +14,7 @@ export default function Home() {
           }}></div>
         </div>
         
-        {/* Geometric Shapes */}
-        <div className="absolute top-20 right-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-float-slow"></div>
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-float-slow" style={{animationDelay: '2s'}}></div>
-        
-        {/* Floating Elements */}
-        <div className="absolute top-1/4 right-1/4 w-20 h-20 border border-white/10 rounded-2xl rotate-12 animate-float hidden lg:block"></div>
-        <div className="absolute bottom-1/3 left-1/3 w-16 h-16 border border-white/10 rounded-full animate-float hidden lg:block" style={{animationDelay: '1s'}}></div>
+        {/* Clean background for hero section */}
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -125,8 +119,8 @@ export default function Home() {
                   <p className="text-xs text-gray-400 mt-1">Satisfaction guaranteed on all work</p>
                 </div>
                 
-                {/* Central Icon */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-gradient-to-br from-accent to-yellow-600 rounded-full flex items-center justify-center shadow-2xl animate-pulse-glow">
+                {/* Main Icon */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-gradient-to-br from-accent to-yellow-600 flex items-center justify-center shadow-2xl">
                   <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                   </svg>
@@ -410,9 +404,7 @@ export default function Home() {
          WHY CHOOSE US - Dark Section
          ============================================ */}
       <section className="py-20 md:py-32 bg-primary-dark relative overflow-hidden">
-        {/* Background Elements */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+        {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}></div>
