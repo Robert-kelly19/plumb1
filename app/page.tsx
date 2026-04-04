@@ -401,6 +401,92 @@ export default function Home() {
       </section>
 
       {/* ============================================
+         HOW WE WORK - Process Section
+         ============================================ */}
+      <section className="py-20 md:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Our Process</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
+              How <span className="text-accent">We Work</span>
+            </h2>
+            <p className="text-lg text-gray-600">
+              Getting your plumbing fixed has never been easier. Our simple process ensures quality service every time.
+            </p>
+          </div>
+          
+          {/* Process Steps */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                step: "01",
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                ),
+                title: "Call Us",
+                description: "Contact us to discuss your plumbing needs"
+              },
+              {
+                step: "02",
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                  </svg>
+                ),
+                title: "Get a Quote",
+                description: "We provide upfront pricing with no hidden fees"
+              },
+              {
+                step: "03",
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                  </svg>
+                ),
+                title: "We Arrive",
+                description: "Our plumber arrives on time, fully equipped"
+              },
+              {
+                step: "04",
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                ),
+                title: "Problem Solved",
+                description: "Quality work guaranteed with your satisfaction"
+              }
+            ].map((item, index) => (
+              <div key={index} className="relative group">
+                {/* Step Number */}
+                <div className="absolute -top-4 -left-2 text-6xl font-bold text-gray-100 opacity-50 group-hover:text-accent/20 transition-colors duration-500">
+                  {item.step}
+                </div>
+                <div className="relative bg-gray-50 rounded-2xl p-8 text-center hover:bg-white hover:shadow-xl transition-all duration-300 h-full">
+                  <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-accent group-hover:scale-110 transition-transform duration-300">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
+                  <p className="text-gray-600 text-sm">
+                    {item.description}
+                  </p>
+                </div>
+                {/* Connector Line */}
+                {index < 3 && (
+                  <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gray-200">
+                    <div className="absolute inset-0 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
          WHY CHOOSE US - Dark Section
          ============================================ */}
       <section className="py-20 md:py-32 bg-primary-dark relative overflow-hidden">
@@ -493,6 +579,24 @@ export default function Home() {
             <p className="text-lg text-gray-600">
               Don't just take our word for it — here's what our satisfied customers have to say about our services.
             </p>
+            {/* Verified Reviews Badge */}
+            <div className="flex flex-wrap items-center justify-center gap-4 mt-6">
+              <div className="flex items-center gap-2 bg-green-50 px-4 py-2 rounded-full">
+                <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-sm font-semibold text-green-800">Verified Reviews</span>
+              </div>
+              <div className="flex items-center gap-1">
+                {[1,2,3,4,5].map((i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+                <span className="text-sm font-semibold text-gray-700 ml-1">4.9/5</span>
+              </div>
+              <span className="text-sm text-gray-500">from 500+ reviews</span>
+            </div>
           </div>
           
           {/* Testimonials Grid */}
@@ -517,6 +621,27 @@ export default function Home() {
                 location: "Southwark, London",
                 initials: "RW",
                 text: "Had a blocked drain that other companies couldn't fix. Rapid Plumbing sorted it out quickly. Great service and fair pricing. Thank you!",
+                rating: 5
+              },
+              {
+                name: "Emma Thompson",
+                location: "Kensington, London",
+                initials: "ET",
+                text: "Had a major leak under my kitchen floor. They found it quickly using their detection equipment and fixed it the same day. Very impressed with the technology they use!",
+                rating: 5
+              },
+              {
+                name: "Michael Chen",
+                location: "Chelsea, London",
+                initials: "MC",
+                text: "Needed a new boiler installed. The team gave me a competitive quote and completed the job in one day. Very professional and clean work. Highly recommended!",
+                rating: 5
+              },
+              {
+                name: "Sophie Anderson",
+                location: "Westminster, London",
+                initials: "SA",
+                text: "Great experience from start to finish. Transparent pricing, arrived on time, and the plumber was very knowledgeable. Will use them for all future plumbing needs.",
                 rating: 5
               }
             ].map((testimonial, index) => (

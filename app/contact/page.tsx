@@ -242,6 +242,66 @@ export default function ContactPage() {
       </section>
 
       {/* ============================================
+         FAQ SECTION
+         ============================================ */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">FAQ</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
+              Frequently Asked Questions
+            </h2>
+            <p className="text-gray-600">
+              Have questions? We have answers. If you can't find what you're looking for, give us a call.
+            </p>
+          </div>
+          
+          <div className="max-w-3xl mx-auto space-y-4">
+            {[
+              {
+                question: "How quickly can you respond to an emergency?",
+                answer: "We offer a 30-minute response time for emergency calls across London. Our team is available 24/7 for urgent plumbing issues."
+              },
+              {
+                question: "Do you offer free quotes?",
+                answer: "Yes, we provide free, no-obligation quotes for all our services. Simply contact us and we'll arrange a convenient time to assess your needs."
+              },
+              {
+                question: "Are your plumbers licensed and insured?",
+                answer: "Absolutely. All our plumbers are fully licensed, insured, and Gas Safe registered. We also offer guarantees on all our workmanship."
+              },
+              {
+                question: "What areas do you cover?",
+                answer: "We serve all of London and the surrounding areas, covering all boroughs from Central London to the outskirts."
+              },
+              {
+                question: "Do you charge for callouts?",
+                answer: "We offer free callouts for quotes and inspections. For emergency visits, there's no callout fee - you only pay for the work completed."
+              },
+              {
+                question: "What payment methods do you accept?",
+                answer: "We accept all major payment methods including cash, card, and bank transfer. We also offer flexible payment plans for larger jobs."
+              }
+            ].map((faq, index) => (
+              <details key={index} className="group bg-white rounded-xl shadow-sm overflow-hidden">
+                <summary className="flex items-center justify-between cursor-pointer p-6 text-left">
+                  <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
+                  <span className="shrink-0 ml-auto mr-2">
+                    <svg className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </span>
+                </summary>
+                <div className="px-6 pb-6 text-gray-600">
+                  {faq.answer}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
          EMERGENCY CTA
          ============================================ */}
       <section className="py-12 bg-primary-dark relative overflow-hidden">
