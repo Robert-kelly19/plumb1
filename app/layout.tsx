@@ -48,10 +48,15 @@ export default function RootLayout({
           </div>
         </div>
 
+        {/* Skip Link for Accessibility */}
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-accent focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">
+          Skip to main content
+        </a>
+
         {/* Navigation */}
-        <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-gray-100/50">
+        <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-gray-100/50 transition-all duration-300" id="main-nav">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-20">
+            <div className="flex justify-between items-center h-20 transition-all duration-300" id="nav-content">
               {/* Logo */}
               <div className="shrink-0">
                 <Link href="/" className="flex items-center gap-3 group">
@@ -331,6 +336,62 @@ export default function RootLayout({
             if (menuBtn) menuBtn.addEventListener('click', openMenu);
             if (closeBtn) closeBtn.addEventListener('click', closeMenu);
             if (overlay) overlay.addEventListener('click', closeMenu);
+          })();
+        `}} />
+
+        {/* Scroll-triggered Animations & Sticky Header */}
+        <script dangerouslySetInnerHTML={{__html: `
+          (function() {
+            // Sticky Header Effect
+            const nav = document.getElementById('main-nav');
+            const navContent = document.getElementById('nav-content');
+            
+            function updateNav() {
+              if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+                navContent.classList.add('h-16');
+                navContent.classList.remove('h-20');
+              } else {
+                nav.classList.remove('shadow-lg');
+                navContent.classList.remove('h-16');
+                navContent.classList.add('h-20');
+              }
+            }
+            
+            window.addEventListener('scroll', updateNav, { passive: true });
+            updateNav();
+
+            // Scroll-triggered Animations using Intersection Observer
+            const observerOptions = {
+              root: null,
+              rootMargin: '0px',
+              threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('animate-in');
+                  observer.unobserve(entry.target);
+                }
+              });
+            }, observerOptions);
+
+            document.querySelectorAll('.service-card, .glass-card, .testimonial-card, .glass-dark').forEach(el => {
+              el.classList.add('opacity-0', 'translate-y-4');
+              el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+              observer.observe(el);
+            });
+
+            // Add animation class styles
+            const style = document.createElement('style');
+            style.textContent = '
+              .animate-in {
+                opacity: 1 !important;
+                transform: translateY(0) !important;
+              }
+            ';
+            document.head.appendChild(style);
           })();
         `}} />
       </body>

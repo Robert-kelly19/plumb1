@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
+    <main id="main-content">
       {/* ============================================
          HERO SECTION - Premium Dark Theme
          ============================================ */}

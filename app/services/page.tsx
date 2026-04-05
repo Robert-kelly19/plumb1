@@ -147,7 +147,7 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <main>
+    <main id="main-content">
       {/* ============================================
          HERO SECTION
          ============================================ */}

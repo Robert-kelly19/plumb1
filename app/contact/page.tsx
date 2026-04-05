@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main>
+    <main id="main-content">
       {/* ============================================
          HERO SECTION
          ============================================ */}
@@ -52,7 +52,7 @@ export default function ContactPage() {
                 <p className="text-gray-500">Fill out the form below and we'll get back to you within 24 hours.</p>
               </div>
               
-              <form className="space-y-6">
+              <form className="space-y-6" id="contact-form" noValidate>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
@@ -283,16 +283,16 @@ export default function ContactPage() {
                 answer: "We accept all major payment methods including cash, card, and bank transfer. We also offer flexible payment plans for larger jobs."
               }
             ].map((faq, index) => (
-              <details key={index} className="group bg-white rounded-xl shadow-sm overflow-hidden">
-                <summary className="flex items-center justify-between cursor-pointer p-6 text-left">
+              <details key={index} className="group bg-white rounded-xl shadow-sm overflow-hidden faq-item">
+                <summary className="flex items-center justify-between cursor-pointer p-6 text-left list-none">
                   <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
                   <span className="shrink-0 ml-auto mr-2">
-                    <svg className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </span>
                 </summary>
-                <div className="px-6 pb-6 text-gray-600">
+                <div className="faq-answer px-6 pb-6 text-gray-600 max-h-0 overflow-hidden transition-all duration-300">
                   {faq.answer}
                 </div>
               </details>
@@ -324,6 +324,91 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* Form Validation Script */}
+      <script dangerouslySetInnerHTML={{__html: `
+        (function() {
+          // FAQ Accordion Animation
+          document.querySelectorAll('.faq-item').forEach(item => {
+            const answer = item.querySelector('.faq-answer');
+            item.addEventListener('toggle', function() {
+              if (this.open) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+              } else {
+                answer.style.maxHeight = '0';
+              }
+            });
+          });
+
+          const form = document.getElementById('contact-form');
+          if (!form) return;
+
+          const inputs = form.querySelectorAll('input, textarea, select');
+          
+          // Real-time validation on blur
+          inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+              validateField(this);
+            });
+            
+            input.addEventListener('input', function() {
+              if (this.classList.contains('error')) {
+                validateField(this);
+              }
+            });
+          });
+
+          function validateField(field) {
+            const errorId = field.id + '-error';
+            let errorEl = document.getElementById(errorId);
+            
+            if (!field.validity.valid) {
+              field.classList.add('error');
+              field.classList.remove('valid');
+              
+              if (!errorEl) {
+                errorEl = document.createElement('p');
+                errorEl.id = errorId;
+                errorEl.className = 'text-red-600 text-sm mt-1';
+                field.parentNode.appendChild(errorEl);
+              }
+              
+              if (field.validity.valueMissing) {
+                errorEl.textContent = 'This field is required';
+              } else if (field.validity.typeMismatch && field.type === 'email') {
+                errorEl.textContent = 'Please enter a valid email address';
+              } else if (field.validity.patternMismatch) {
+                errorEl.textContent = 'Please enter a valid phone number';
+              } else {
+                errorEl.textContent = field.validationMessage;
+              }
+            } else {
+              field.classList.remove('error');
+              field.classList.add('valid');
+              if (errorEl) errorEl.remove();
+            }
+          }
+
+          // Form submit handler
+          form.addEventListener('submit', function(e) {
+            let isValid = true;
+            inputs.forEach(input => {
+              if (!validateField(input)) isValid = false;
+              input.classList.add('touched');
+            });
+            
+            if (!isValid) {
+              e.preventDefault();
+              // Scroll to first error
+              const firstError = form.querySelector('.error');
+              if (firstError) {
+                firstError.focus();
+                firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }
+            }
+          });
+        })();
+      `}} />
     </main>
   );
 }
