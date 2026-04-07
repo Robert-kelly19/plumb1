@@ -8,18 +8,16 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main id="main-content">
-      {/* ============================================
-         HERO SECTION
-         ============================================ */}
+    
       <section className="relative py-20 md:py-32 bg-primary-dark overflow-hidden">
-        {/* Background Pattern */}
+       
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}></div>
         </div>
         
-        {/* Clean background for hero section */}
+     
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Get In Touch</span>
@@ -31,7 +29,7 @@ export default function ContactPage() {
           </p>
         </div>
         
-        {/* Wave Divider */}
+        
         <div className="absolute bottom-0 left-0 right-0 wave-divider">
           <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-20 md:h-32">
             <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#fafafa"/>
@@ -39,13 +37,11 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ============================================
-         CONTACT CONTENT
-         ============================================ */}
+    
       <section className="py-16 md:py-24 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-            {/* Contact Form */}
+          
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10 border border-gray-100">
               <div className="mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2" style={{fontFamily: 'Playfair Display, serif'}}>Send Us a Message</h2>
