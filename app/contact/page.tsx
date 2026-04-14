@@ -8,98 +8,93 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main id="main-content">
-    
-      <section className="relative py-20 md:py-32 bg-primary-dark overflow-hidden">
-       
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+      <section className="relative py-24 md:py-36 bg-slate-900 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
+          <div className="absolute inset-0 opacity-30" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}></div>
         </div>
-        
-     
-        
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Get In Touch</span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white" style={{fontFamily: 'Playfair Display, serif'}}>
-            Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-500">Us</span>
+        <div className="absolute bottom-0 left-0 right-0 h-24 md:h-32 bg-gradient-to-t from-white to-transparent"></div>
+         
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 text-amber-400 text-sm font-medium mb-6">
+            <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+            Available 24/7
+          </span>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white tracking-tight">
+            Get in Touch
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl">
-            Get in touch with our team for a free quote or emergency plumbing services. We're here to help 24/7.
+          <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+            Ready to fix your plumbing issues? We're here to help with fast, reliable service across London.
           </p>
-        </div>
-        
-        
-        <div className="absolute bottom-0 left-0 right-0 wave-divider">
-          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-20 md:h-32">
-            <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#fafafa"/>
-          </svg>
         </div>
       </section>
 
     
-      <section className="py-16 md:py-24 bg-[#fafafa]">
+      <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           
-            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10 border border-gray-100">
-              <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-2" style={{fontFamily: 'Playfair Display, serif'}}>Send Us a Message</h2>
-                <p className="text-gray-500">Fill out the form below and we'll get back to you within 24 hours.</p>
-              </div>
-              
-              <form className="space-y-6" id="contact-form" noValidate>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Your Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      className="input"
-                      placeholder="John Smith"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Phone Number *
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      required
-                      className="input"
-                      placeholder="020 7946 0123"
-                    />
-                  </div>
+            <div className="lg:col-span-7">
+              <div className="bg-white rounded-2xl p-8 md:p-12 border border-slate-100 shadow-sm">
+                <div className="mb-10">
+                  <h2 className="text-3xl font-bold text-slate-900 mb-3">Send us a message</h2>
+                  <p className="text-slate-500 text-lg">Fill out the form below and we'll get back to you within 24 hours.</p>
                 </div>
+              
+                <form className="space-y-6" id="contact-form" noValidate>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label htmlFor="name" className="block text-sm font-semibold text-slate-700">
+                        Your Name
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none"
+                        placeholder="John Smith"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label htmlFor="phone" className="block text-sm font-semibold text-slate-700">
+                        Phone Number
+                      </label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        required
+                        className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none"
+                        placeholder="020 7946 0123"
+                      />
+                    </div>
+                  </div>
                 
-                <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Email Address *
+                <div className="space-y-2">
+                  <label htmlFor="email" className="block text-sm font-semibold text-slate-700">
+                    Email Address
                   </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     required
-                    className="input"
+                    className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none"
                     placeholder="john@example.com"
                   />
                 </div>
 
-                <div>
-                  <label htmlFor="service" className="block text-sm font-semibold text-gray-700 mb-2">
+                <div className="space-y-2">
+                  <label htmlFor="service" className="block text-sm font-semibold text-slate-700">
                     Service Required
                   </label>
                   <select
                     id="service"
                     name="service"
-                    className="input"
+                    className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none appearance-none"
                   >
                     <option value="">Select a service</option>
                     <option value="emergency">Emergency Plumbing</option>
@@ -112,124 +107,110 @@ export default function ContactPage() {
                   </select>
                 </div>
 
-                <div>
-                  <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Message *
+                <div className="space-y-2">
+                  <label htmlFor="message" className="block text-sm font-semibold text-slate-700">
+                    Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     required
                     rows={5}
-                    className="input"
+                    className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none resize-none"
                     placeholder="Please describe your plumbing issue..."
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="btn btn-primary w-full text-lg py-4"
+                  className="w-full py-4 px-8 rounded-xl bg-gradient-to-r from-amber-600 to-amber-500 text-white font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all"
                 >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  Send Message
+                  <span className="flex items-center justify-center gap-2">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Send Message
+                  </span>
                 </button>
 
-                <p className="text-sm text-gray-500 text-center">
+                <p className="text-sm text-slate-400 text-center">
                   We aim to respond within 24 hours. For emergencies, please call us directly.
                 </p>
               </form>
+              </div>
             </div>
 
-            {/* Contact Info & Map */}
-            <div className="space-y-8">
-              {/* Contact Details */}
-              <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10 border border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6" style={{fontFamily: 'Playfair Display, serif'}}>Get In Touch</h2>
+            <div className="lg:col-span-5 space-y-6">
+              <div className="bg-slate-900 rounded-2xl p-8 md:p-10 text-white">
+                <h2 className="text-2xl font-bold mb-8">Contact Information</h2>
                 
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4 group">
-                    <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-accent/20 transition-colors">
-                      <svg className="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center shrink-0">
+                      <svg className="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Phone</h3>
-                      <p className="text-gray-600 font-mono">020 7946 0123</p>
-                      <p className="text-sm text-gray-500">Available 24/7 for emergencies</p>
+                      <h3 className="font-semibold text-white mb-1">Phone</h3>
+                      <p className="text-slate-300 font-mono text-lg">020 7946 0123</p>
+                      <p className="text-sm text-slate-400 mt-1">Available 24/7 for emergencies</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4 group">
-                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-blue-200 transition-colors">
-                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center shrink-0">
+                      <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Email</h3>
-                      <p className="text-gray-600">info@rapidplumbing.co.uk</p>
-                      <p className="text-sm text-gray-500">We respond within 24 hours</p>
+                      <h3 className="font-semibold text-white mb-1">Email</h3>
+                      <p className="text-slate-300 text-lg">info@rapidplumbing.co.uk</p>
+                      <p className="text-sm text-slate-400 mt-1">We respond within 24 hours</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4 group">
-                    <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-purple-200 transition-colors">
-                      <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center shrink-0">
+                      <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Service Area</h3>
-                      <p className="text-gray-600">London and Surrounding Areas</p>
-                      <p className="text-sm text-gray-500">Covering all London boroughs</p>
+                      <h3 className="font-semibold text-white mb-1">Service Area</h3>
+                      <p className="text-slate-300 text-lg">London and Surrounding Areas</p>
+                      <p className="text-sm text-slate-400 mt-1">Covering all London boroughs</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4 group">
-                    <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-green-200 transition-colors">
-                      <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center shrink-0">
+                      <svg className="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Business Hours</h3>
-                      <p className="text-gray-600">Monday - Friday: 8am - 6pm</p>
-                      <p className="text-gray-600">Saturday: 9am - 4pm</p>
-                      <p className="text-sm text-green-600 font-medium">24/7 Emergency Service Available</p>
+                      <h3 className="font-semibold text-white mb-1">Business Hours</h3>
+                      <p className="text-slate-300">Mon - Fri: 8am - 6pm</p>
+                      <p className="text-slate-300">Sat: 9am - 4pm</p>
+                      <p className="text-sm text-emerald-400 font-medium mt-2">24/7 Emergency Service Available</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
-                <div className="relative h-64">
-                  <img 
-                    src="https://images.unsplash.com/photo-1529651737248-dad5e287768e?w=800&q=80"
-                    alt="London cityscape"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/60 to-transparent"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="glass-card rounded-xl px-6 py-4">
-                      <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
-                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="font-semibold text-gray-900">Serving All of London</p>
-                          <p className="text-sm text-gray-500">Central, North, South, East & West</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div className="relative h-64 rounded-2xl overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1529651737248-dad5e287768e?w=800&q=80"
+                  alt="London cityscape"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6">
+                  <p className="font-bold text-white text-xl mb-1">Serving All of London</p>
+                  <p className="text-slate-300">Central, North, South, East & West</p>
                 </div>
               </div>
             </div>
