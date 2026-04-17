@@ -163,10 +163,10 @@ export default function ServicesPage() {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Our Services</span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white" style={{fontFamily: 'Playfair Display, serif'}}>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white" style={{fontFamily: 'Playfair Display, serif'}}>
             Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-500">Plumbing Services</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl">
             Comprehensive plumbing solutions for homes and businesses across London. Quality workmanship guaranteed.
           </p>
         </div>
@@ -189,7 +189,7 @@ export default function ServicesPage() {
               <div key={index} className={`bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 group ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                 <div className="grid grid-cols-1 lg:grid-cols-5">
                   {/* Image */}
-                  <div className="relative h-64 lg:h-auto lg:col-span-2 overflow-hidden">
+                  <div className="relative h-56 sm:h-64 lg:h-auto lg:col-span-2 overflow-hidden">
                     <img 
                       src={service.image}
                       alt={service.title}
@@ -206,29 +206,29 @@ export default function ServicesPage() {
                   </div>
                   
                   {/* Content */}
-                  <div className="lg:col-span-3 p-8 lg:p-10">
-                    <div className="flex items-start gap-4 mb-4">
-                      <div className={`w-14 h-14 ${service.color} rounded-xl flex items-center justify-center text-white shadow-lg`}>
+                  <div className="lg:col-span-3 p-6 sm:p-8 lg:p-10">
+                    <div className="flex items-start gap-3 sm:gap-4 mb-4">
+                      <div className={`w-12 h-12 sm:w-14 ${service.color} rounded-xl flex items-center justify-center text-white shadow-lg`}>
                         {service.icon}
                       </div>
                       <div>
-                        <h2 className="text-2xl lg:text-3xl font-bold text-gray-900" style={{fontFamily: 'Playfair Display, serif'}}>{service.title}</h2>
+                        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900" style={{fontFamily: 'Playfair Display, serif'}}>{service.title}</h2>
                       </div>
                     </div>
-                    <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                    <p className="text-gray-600 text-base sm:text-lg mb-5 sm:mb-6 leading-relaxed">
                       {service.description}
                     </p>
-                    <h3 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                    <h3 className="font-semibold text-gray-900 mb-3 sm:mb-4 flex items-center gap-2">
                       <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       What's Included:
                     </h3>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center gap-3 text-gray-600">
-                          <span className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center shrink-0">
-                            <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <li key={featureIndex} className="flex items-center gap-3 text-gray-600 text-sm sm:text-base">
+                          <span className="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center shrink-0">
+                            <svg className="w-3 h-3 sm:w-4 sm:h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                             </svg>
                           </span>
@@ -286,20 +286,20 @@ export default function ServicesPage() {
         {/* Background decoration */}
         
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
             Ready to Book a Plumber?
           </h2>
-          <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-300 mb-8 sm:mb-10 max-w-2xl mx-auto">
             Get in touch today for a free quote. Our team is ready to help with all your plumbing needs.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn btn-primary text-lg px-10 py-5">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Link href="/contact" className="btn btn-primary text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-5">
               Request a Quote
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </Link>
-            <a href="tel:02079460123" className="btn btn-outline text-lg px-10 py-5">
+            <a href="tel:02079460123" className="btn btn-outline text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-5">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>

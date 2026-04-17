@@ -22,10 +22,10 @@ export default function ContactPage() {
             <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
             Available 24/7
           </span>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white tracking-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white tracking-tight">
             Get in Touch
           </h1>
-          <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
             Ready to fix your plumbing issues? We're here to help with fast, reliable service across London.
           </p>
         </div>
@@ -37,14 +37,14 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           
             <div className="lg:col-span-7">
-              <div className="bg-white rounded-2xl p-8 md:p-12 border border-slate-100 shadow-sm">
-                <div className="mb-10">
-                  <h2 className="text-3xl font-bold text-slate-900 mb-3">Send us a message</h2>
-                  <p className="text-slate-500 text-lg">Fill out the form below and we'll get back to you within 24 hours.</p>
+              <div className="bg-white rounded-2xl p-6 sm:p-8 md:p-12 border border-slate-100 shadow-sm">
+                <div className="mb-8 sm:mb-10">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Send us a message</h2>
+                  <p className="text-slate-500 text-base sm:text-lg">Fill out the form below and we'll get back to you within 24 hours.</p>
                 </div>
               
-                <form className="space-y-6" id="contact-form" noValidate>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <form className="space-y-5 sm:space-y-6" id="contact-form" noValidate>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                     <div className="space-y-2">
                       <label htmlFor="name" className="block text-sm font-semibold text-slate-700">
                         Your Name
@@ -54,7 +54,7 @@ export default function ContactPage() {
                         id="name"
                         name="name"
                         required
-                        className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none"
+                        className="w-full px-4 py-3 sm:py-3.5 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none text-base"
                         placeholder="John Smith"
                       />
                     </div>
@@ -67,7 +67,7 @@ export default function ContactPage() {
                         id="phone"
                         name="phone"
                         required
-                        className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none"
+                        className="w-full px-4 py-3 sm:py-3.5 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none text-base"
                         placeholder="020 7946 0123"
                       />
                     </div>
@@ -82,7 +82,7 @@ export default function ContactPage() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none"
+                    className="w-full px-4 py-3 sm:py-3.5 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none text-base"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -94,7 +94,7 @@ export default function ContactPage() {
                   <select
                     id="service"
                     name="service"
-                    className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none appearance-none"
+                    className="w-full px-4 py-3 sm:py-3.5 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none appearance-none text-base"
                   >
                     <option value="">Select a service</option>
                     <option value="emergency">Emergency Plumbing</option>
@@ -115,8 +115,8 @@ export default function ContactPage() {
                     id="message"
                     name="message"
                     required
-                    rows={5}
-                    className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none resize-none"
+                    rows={4}
+                    className="w-full px-4 py-3 sm:py-3.5 border-2 border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 transition-all outline-none resize-none text-base"
                     placeholder="Please describe your plumbing issue..."
                   ></textarea>
                 </div>
@@ -141,8 +141,8 @@ export default function ContactPage() {
             </div>
 
             <div className="lg:col-span-5 space-y-6">
-              <div className="bg-slate-900 rounded-2xl p-8 md:p-10 text-white">
-                <h2 className="text-2xl font-bold mb-8">Contact Information</h2>
+              <div className="bg-slate-900 rounded-2xl p-6 sm:p-8 md:p-10 text-white">
+                <h2 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8">Contact Information</h2>
                 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
@@ -223,9 +223,9 @@ export default function ContactPage() {
          ============================================ */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">FAQ</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
               Frequently Asked Questions
             </h2>
             <p className="text-gray-600">
@@ -287,12 +287,12 @@ export default function ContactPage() {
         }}></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="text-white">
-              <h2 className="text-2xl font-bold mb-2" style={{fontFamily: 'Playfair Display, serif'}}>Have a Plumbing Emergency?</h2>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
+            <div className="text-white text-center md:text-left">
+              <h2 className="text-xl sm:text-2xl font-bold mb-2" style={{fontFamily: 'Playfair Display, serif'}}>Have a Plumbing Emergency?</h2>
               <p className="text-gray-300">Call us now — we're available 24/7</p>
             </div>
-            <a href="tel:02079460123" className="btn btn-primary text-lg px-10 py-4 animate-pulse-glow">
+            <a href="tel:02079460123" className="btn btn-primary text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-4 animate-pulse-glow">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>

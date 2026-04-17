@@ -6,7 +6,7 @@ export default function Home() {
       {/* ============================================
          HERO SECTION - Premium Dark Theme
          ============================================ */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-primary-dark">
+      <section className="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden bg-primary-dark">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-30">
           <div className="absolute inset-0" style={{
@@ -30,7 +30,7 @@ export default function Home() {
               </div>
               
               {/* Headline */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-fade-in-up delay-100" style={{fontFamily: 'Playfair Display, serif'}}>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-fade-in-up delay-100" style={{fontFamily: 'Playfair Display, serif'}}>
                 Expert Plumbing.{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-500">London's Trusted.</span>
               </h1>
@@ -41,14 +41,14 @@ export default function Home() {
               </p>
               
               {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
-                <Link href="/contact" className="btn btn-primary text-lg px-8 py-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-in-up delay-300">
+                <Link href="/contact" className="btn btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 text-center sm:text-left">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   Request a Quote
                 </Link>
-                <a href="tel:02079460123" className="btn btn-ghost text-lg px-8 py-4 border border-white/20">
+                <a href="tel:02079460123" className="btn btn-ghost text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 border border-white/20 text-center sm:text-left">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
@@ -181,13 +181,13 @@ export default function Home() {
             {/* Content Side */}
             <div className="lg:col-span-7">
               <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">About Us</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
                 Your Trusted <span className="text-accent">London Plumbers</span>
               </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed">
                 At Rapid Plumbing, we understand that plumbing issues can occur at any time. That's why we offer prompt, professional services across London. Whether it's a leaking pipe, blocked drain, or a new water heater installation, our experienced team is ready to help.
               </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
                 We pride ourselves on transparent pricing, quality workmanship, and excellent customer service. All our plumbers are fully licensed and insured, giving you peace of mind with every job we undertake.
               </p>
               
@@ -223,12 +223,12 @@ export default function Home() {
       <section className="py-20 md:py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">What We Offer</span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
               Our Plumbing Services
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-base sm:text-lg text-gray-600">
               Comprehensive plumbing solutions for homes and businesses across London. From emergency repairs to installations, we handle it all.
             </p>
           </div>
@@ -406,12 +406,12 @@ export default function Home() {
       <section className="py-20 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Our Process</span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
               How <span className="text-accent">We Work</span>
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-base sm:text-lg text-gray-600">
               Getting your plumbing fixed has never been easier. Our simple process ensures quality service every time.
             </p>
           </div>
@@ -497,12 +497,12 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Section Header */}
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Why Choose Us</span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
               The <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-500">Rapid</span> Difference
             </h2>
-            <p className="text-lg text-gray-300">
+            <p className="text-base sm:text-lg text-gray-300">
               We're committed to providing the best plumbing services in London. Here's why thousands of customers trust us.
             </p>
           </div>
@@ -571,12 +571,12 @@ export default function Home() {
       <section className="py-20 md:py-32 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Testimonials</span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
               What Our Customers Say
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-base sm:text-lg text-gray-600">
               Don't just take our word for it — here's what our satisfied customers have to say about our services.
             </p>
             {/* Verified Reviews Badge */}
@@ -694,21 +694,21 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl"></div>
         
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
             Ready to Fix Your Plumbing Issues?
           </h2>
-          <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 md:mb-10 max-w-2xl mx-auto">
             Get in touch with us today for a free quote. Our team is ready to help with all your plumbing needs across London.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn btn-primary text-lg px-10 py-5">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Link href="/contact" className="btn btn-primary text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-5">
               Request a Free Quote
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
-            <a href="tel:02079460123" className="btn btn-outline text-lg px-10 py-5">
+            <a href="tel:02079460123" className="btn btn-outline text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-5">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>

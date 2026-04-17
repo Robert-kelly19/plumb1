@@ -421,6 +421,22 @@ h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
   cursor: pointer;
   border: none;
   outline: none;
+  min-height: 48px;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 640px) {
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+    min-height: 48px;
+    width: 100%;
+  }
+
+  .btn-inline {
+    width: auto;
+  }
 }
 
 .btn-primary {
@@ -650,6 +666,8 @@ h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
   border-radius: var(--radius-lg);
   background: var(--white);
   transition: all var(--transition-base);
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .input:focus {
@@ -669,11 +687,23 @@ textarea.input {
 
 select.input {
   appearance: none;
+  -webkit-appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748b'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 1rem center;
   background-size: 1.25rem;
   padding-right: 3rem;
+}
+
+@media (max-width: 768px) {
+  .input {
+    font-size: 16px;
+  }
+
+  select.input {
+    background-size: 1.25rem;
+    padding-right: 2.5rem;
+  }
 }
 
 /* ============================================
@@ -745,6 +775,8 @@ select.input {
   transform: translateX(100%);
   transition: transform var(--transition-smooth);
   box-shadow: var(--shadow-xl);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mobile-menu.open {
@@ -765,6 +797,20 @@ select.input {
 .mobile-menu-overlay.open {
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    max-width: 85vw;
+  }
+
+  .mobile-menu a,
+  .mobile-menu button {
+    padding: 0.875rem 1rem;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* ============================================
@@ -862,17 +908,66 @@ select.input {
 }
 
 /* ============================================
-   RESPONSIVE
+   RESPONSIVE - Enhanced Mobile Styles
    ============================================ */
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   :root {
-    --space-4xl: 3rem;
-    --space-3xl: 2.5rem;
+    --space-4xl: 2.5rem;
+    --space-3xl: 2rem;
+    --space-2xl: 1.5rem;
+    --space-xl: 1rem;
   }
   
   .section {
     padding: var(--space-3xl) 0;
+  }
+
+  h1 { font-size: clamp(2rem, 6vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 4vw, 1.5rem); }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+    min-height: 48px;
+    touch-action: manipulation;
+  }
+
+  .card {
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+  }
+
+  .input {
+    padding: 0.75rem 1rem;
+    font-size: 16px;
+    min-height: 48px;
+  }
+
+  textarea.input {
+    min-height: 120px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  :root {
+    --space-4xl: 3rem;
+    --space-3xl: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--space-3xl) 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-narrow {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
