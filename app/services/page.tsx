@@ -1,8 +1,14 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Our Services - Rapid Plumbing",
-  description: "Comprehensive plumbing services in London including emergency plumbing, pipe repair, drain cleaning, water heater installation, and bathroom plumbing.",
+  title: "Plumbing Services London - Emergency & Installation | Rapid Plumbing",
+  description: "Comprehensive plumbing services in London including emergency repairs, leak detection, drain cleaning, water heaters & bathroom installations. Gas Safe registered plumbers.",
+  keywords: "plumbing services London, emergency plumbing, leak repair, drain cleaning, water heater installation, bathroom plumbing",
+  openGraph: {
+    title: "Professional Plumbing Services London | Rapid Plumbing",
+    description: "Expert plumbing services across London. Emergency repairs, installations, and maintenance. Free quotes available.",
+    type: "website",
+  }
 };
 
 const services = [

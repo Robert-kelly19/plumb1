@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import "./globals.css";
+import './globals.css';
 
 export const metadata: Metadata = {
   title: "Rapid Plumbing - Fast & Reliable Plumbing Services in London",
@@ -18,6 +18,46 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        
+        {/* Structured Data for Local Business */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Plumber",
+              "name": "Rapid Plumbing",
+              "description": "Professional plumbing services in London including emergency repairs, leak detection, drain cleaning, and installations.",
+              "url": "https://rapidplumbing.co.uk",
+              "telephone": "+44-20-7946-0123",
+              "email": "info@rapidplumbing.co.uk",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "London",
+                "addressCountry": "GB"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "51.5074",
+                "longitude": "-0.1278"
+              },
+              "areaServed": "London",
+              "serviceType": ["Emergency Plumbing", "Leak Repair", "Drain Cleaning", "Pipe Repair", "Water Heater Installation", "Bathroom Plumbing"],
+              "priceRange": "££",
+              "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-16:00",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "5000"
+              },
+              "hasCredential": {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Gas Safe Register",
+                "credentialCategory": "license"
+              }
+            })
+          }}
+        />
       </head>
       <body className="antialiased font-body">
         {/* Top Contact Bar - Hidden on mobile, visible on larger screens */}

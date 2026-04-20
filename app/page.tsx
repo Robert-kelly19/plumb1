@@ -1,8 +1,31 @@
 import Link from "next/link";
 
-export default function Home() {
+export const metadata = {
+  title: "Rapid Plumbing - Professional Plumbers London | 24/7 Emergency Service",
+  description: "Expert plumbing services in London. Emergency plumbing, leak repair, drain cleaning & installations. Gas Safe registered. Free quotes. Call 020 7946 0123.",
+  keywords: "plumbers London, emergency plumber, leak repair London, drain cleaning, plumbing installation, Gas Safe registered",
+  openGraph: {
+    title: "Rapid Plumbing - London's Trusted Plumbers",
+    description: "24/7 emergency plumbing services across London. Professional, reliable, and affordable. Get a free quote today.",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Rapid Plumbing - Professional Plumbing Services London"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rapid Plumbing - Professional Plumbers London",
+    description: "24/7 emergency plumbing services across London. Professional, reliable, and affordable.",
+  }
+};
+export default function Page() {
   return (
-    <main id="main-content">
+    <main>
       {/* ============================================
          HERO SECTION - Premium Dark Theme
          ============================================ */}
@@ -21,8 +44,8 @@ export default function Home() {
             {/* Left Content */}
             <div className="lg:col-span-7 text-white">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-8 animate-fade-in-up">
-                <span className="relative flex h-2 w-2">
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-8 animate-fade-in-up" role="status" aria-label="Emergency service availability">
+                <span className="relative flex h-2 w-2" aria-hidden="true">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                 </span>
@@ -42,17 +65,17 @@ export default function Home() {
               
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-in-up delay-300">
-                <Link href="/contact" className="btn btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 text-center sm:text-left">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <Link href="/contact" className="btn btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 text-center sm:text-left" aria-label="Get a free plumbing quote">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   Request a Quote
                 </Link>
-                <a href="tel:02079460123" className="btn btn-ghost text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 border border-white/20 text-center sm:text-left">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <a href="tel:02079460123" className="btn btn-ghost text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 border border-white/20 text-center sm:text-left" aria-label="Call Rapid Plumbing for emergency service">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
-                  Call Now
+                  Call Now: 020 7946 0123
                 </a>
               </div>
               
@@ -137,6 +160,22 @@ export default function Home() {
           </svg>
         </div>
       </section>
+
+      {/* Emergency CTA Banner - Sticky */}
+      <div id="emergency-banner" className="fixed top-0 left-0 right-0 z-40 bg-red-600 text-white py-2 px-4 transform -translate-y-full transition-transform duration-300 shadow-lg">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <svg className="w-5 h-5 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+            <span className="font-semibold">Plumbing Emergency?</span>
+            <span className="hidden sm:inline">We respond within 30 minutes</span>
+          </div>
+          <a href="tel:02079460123" className="bg-white text-red-600 px-4 py-1 rounded-full font-bold hover:bg-gray-100 transition-colors" aria-label="Call for emergency plumbing service">
+            020 7946 0123
+          </a>
+        </div>
+      </div>
 
       {/* ============================================
          INTRODUCTION SECTION - Editorial Style
@@ -717,6 +756,42 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Emergency Banner Script */}
+      <script dangerouslySetInnerHTML={{__html: `
+        (function() {
+          const banner = document.getElementById('emergency-banner');
+          let lastScrollY = window.scrollY;
+          
+          function updateBanner() {
+            const currentScrollY = window.scrollY;
+            const shouldShow = currentScrollY > 300;
+            
+            if (shouldShow) {
+              banner.style.transform = 'translateY(0)';
+            } else {
+              banner.style.transform = 'translateY(-100%)';
+            }
+            
+            lastScrollY = currentScrollY;
+          }
+          
+          // Throttle scroll events
+          let ticking = false;
+          window.addEventListener('scroll', function() {
+            if (!ticking) {
+              requestAnimationFrame(function() {
+                updateBanner();
+                ticking = false;
+              });
+              ticking = true;
+            }
+          });
+          
+          // Initial check
+          updateBanner();
+        })();
+      `}} />
     </main>
   );
 }
