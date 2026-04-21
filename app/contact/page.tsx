@@ -16,12 +16,12 @@ export default function ContactPage() {
     <main id="main-content">
       <section className="relative py-24 md:py-36 bg-slate-900 overflow-hidden" aria-labelledby="contact-hero-heading">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
+          <div className="absolute inset-0 bg-linear-to-br from-slate-900 via-slate-800 to-slate-900"></div>
           <div className="absolute inset-0 opacity-30" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}></div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-24 md:h-32 bg-gradient-to-t from-white to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-24 md:h-32 bg-linear-to-t from-white to-transparent"></div>
          
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 text-amber-400 text-sm font-medium mb-6" role="status" aria-label="Available 24/7">
@@ -38,10 +38,6 @@ export default function ContactPage() {
       </section>
 
     
-      <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-          
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
@@ -153,7 +149,7 @@ export default function ContactPage() {
                   type="submit"
                   id="submit-btn"
                   disabled
-                  className="w-full py-4 px-8 rounded-xl bg-gradient-to-r from-amber-600 to-amber-500 text-white font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                  className="w-full py-4 px-8 rounded-xl bg-linear-to-r from-amber-600 to-amber-500 text-white font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                   aria-describedby="submit-status"
                 >
                   <span className="flex items-center justify-center gap-2">
@@ -174,7 +170,7 @@ export default function ContactPage() {
 
             <div className="lg:col-span-5 space-y-6">
               {/* Trust Signals */}
-              <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 border border-green-100">
+              <div className="bg-linear-to-r from-green-50 to-emerald-50 rounded-2xl p-6 border border-green-100">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
                     <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -264,7 +260,7 @@ export default function ContactPage() {
                   alt="London cityscape"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
                   <p className="font-bold text-white text-xl mb-1">Serving All of London</p>
                   <p className="text-slate-300">Central, North, South, East & West</p>
@@ -273,15 +269,12 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        </section>
-        </div>
-        </div>
       </section>
 
       {/* ============================================
          TESTIMONIALS SECTION
          ============================================ */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-16 md:py-24 bg-linear-to-br from-slate-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">What Our Customers Say</span>

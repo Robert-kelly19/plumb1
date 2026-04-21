@@ -1,6 +1,7 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Rapid Plumbing - Professional Plumbers London | 24/7 Emergency Service",
   description: "Expert plumbing services in London. Emergency plumbing, leak repair, drain cleaning & installations. Gas Safe registered. Free quotes. Call 020 7946 0123.",
   keywords: "plumbers London, emergency plumber, leak repair London, drain cleaning, plumbing installation, Gas Safe registered",
@@ -55,7 +56,7 @@ export default function Page() {
               {/* Headline */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-fade-in-up delay-100" style={{fontFamily: 'Playfair Display, serif'}}>
                 Expert Plumbing.{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-500">London's Trusted.</span>
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-yellow-500">London's Trusted.</span>
               </h1>
               
               {/* Subheadline */}
@@ -86,7 +87,7 @@ export default function Page() {
                   <div className="flex items-center gap-2">
                     <div className="flex -space-x-2">
                       {[1,2,3,4,5].map((i) => (
-                        <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-gray-300 to-gray-400 border-2 border-primary-dark flex items-center justify-center text-xs font-bold text-gray-900">
+                        <div key={i} className="w-8 h-8 rounded-full bg-linear-to-br from-gray-300 to-gray-400 border-2 border-primary-dark flex items-center justify-center text-xs font-bold text-gray-900">
                           {String.fromCharCode(64 + i)}
                         </div>
                       ))}
@@ -143,7 +144,7 @@ export default function Page() {
                 </div>
                 
                 {/* Main Icon */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-gradient-to-br from-accent to-yellow-600 flex items-center justify-center shadow-2xl">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-linear-to-br from-accent to-yellow-600 flex items-center justify-center shadow-2xl">
                   <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                   </svg>
@@ -193,7 +194,7 @@ export default function Page() {
                     alt="Professional plumber at work"
                     className="w-full h-80 md:h-96 lg:h-[500px] object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                  <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent"></div>
                 </div>
                 
                 {/* Floating Badge */}
@@ -282,7 +283,7 @@ export default function Page() {
                   alt="Emergency plumbing"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent"></div>
                 <div className="absolute top-4 left-4">
                   <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
                     <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
@@ -317,7 +318,7 @@ export default function Page() {
                   alt="Leak repair"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent"></div>
               </div>
               <div className="p-6">
                 <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
@@ -346,7 +347,7 @@ export default function Page() {
                   alt="Drain cleaning"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent"></div>
               </div>
               <div className="p-6">
                 <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
@@ -375,7 +376,7 @@ export default function Page() {
                   alt="Water heater"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent"></div>
               </div>
               <div className="p-6">
                 <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
@@ -405,7 +406,7 @@ export default function Page() {
                   alt="Bathroom plumbing"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent"></div>
               </div>
               <div className="p-6 md:p-8">
                 <div className="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center mb-4">
@@ -539,7 +540,7 @@ export default function Page() {
           <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Why Choose Us</span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
-              The <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-500">Rapid</span> Difference
+              The <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-yellow-500">Rapid</span> Difference
             </h2>
             <p className="text-base sm:text-lg text-gray-300">
               We're committed to providing the best plumbing services in London. Here's why thousands of customers trust us.
@@ -704,7 +705,7 @@ export default function Page() {
                 
                 {/* Author */}
                 <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
-                  <div className="w-12 h-12 bg-gradient-to-br from-accent to-yellow-500 rounded-full flex items-center justify-center text-white font-bold">
+                  <div className="w-12 h-12 bg-linear-to-br from-accent to-yellow-500 rounded-full flex items-center justify-center text-white font-bold">
                     {testimonial.initials}
                   </div>
                   <div>
@@ -723,7 +724,7 @@ export default function Page() {
          ============================================ */}
       <section className="py-20 md:py-32 relative overflow-hidden">
         {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-dark to-gray-900"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-dark to-gray-900"></div>
         <div className="absolute inset-0 opacity-20" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}></div>

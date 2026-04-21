@@ -1,6 +1,7 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Plumbing Services London - Emergency & Installation | Rapid Plumbing",
   description: "Comprehensive plumbing services in London including emergency repairs, leak detection, drain cleaning, water heaters & bathroom installations. Gas Safe registered plumbers.",
   keywords: "plumbing services London, emergency plumbing, leak repair, drain cleaning, water heater installation, bathroom plumbing",
@@ -170,7 +171,7 @@ export default function ServicesPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Our Services</span>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white" style={{fontFamily: 'Playfair Display, serif'}}>
-            Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-500">Plumbing Services</span>
+            Professional <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-yellow-500">Plumbing Services</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl">
             Comprehensive plumbing solutions for homes and businesses across London. Quality workmanship guaranteed.
@@ -201,7 +202,7 @@ export default function ServicesPage() {
                       alt={service.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent lg:bg-gradient-to-r lg:from-black/40 lg:to-transparent"></div>
+                    <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent lg:bg-linear-to-r lg:from-black/40 lg:to-transparent"></div>
                     {/* Featured Badge */}
                     <div className="absolute top-4 left-4">
                       <span className={`${service.color} text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1`}>
