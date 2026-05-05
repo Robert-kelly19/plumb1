@@ -35,9 +35,130 @@ export default function ServicesPage() {
     
       <section className="py-16 md:py-24 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-8 lg:space-y-12">
-            <div className="text-center py-20">
-              <p className="text-gray-500 text-lg">Service content will be displayed here.</p>
+          <div className="space-y-16 lg:space-y-24">
+            {/* Service Category 1 */}
+            <div className="space-y-8">
+              <div className="max-w-3xl">
+                <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Emergency Services</span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
+                  Emergency Plumbing
+                </h2>
+                <p className="text-base sm:text-lg text-gray-600">
+                  Available 24/7 for urgent plumbing issues. Our rapid response team arrives within 30 minutes to fix burst pipes, major leaks, and other emergencies.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  {title: "Burst Pipe Repair", desc: "Immediate repair for burst or frozen pipes"},
+                  {title: "Emergency Leak Fix", desc: "Rapid response for major leaks and flooding"},
+                  {title: "No Hot Water", desc: "Restore hot water supply quickly and efficiently"},
+                ].map((item, i) => (
+                  <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                    <p className="text-gray-600 text-sm">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Service Category 2 */}
+            <div className="space-y-8">
+              <div className="max-w-3xl">
+                <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Installation & Repair</span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
+                  Leak Detection & Repair
+                </h2>
+                <p className="text-base sm:text-lg text-gray-600">
+                  Fast and effective leak detection using advanced equipment. From dripping taps to hidden pipe leaks, we find and fix the problem.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  {title: "Tap Repair", desc: "Fix dripping or leaking taps"},
+                  {title: "Pipe Leak Detection", desc: "Advanced thermal imaging to find hidden leaks"},
+                  {title: "Shower Seal Replacement", desc: "Prevent water damage with new seals"},
+                ].map((item, i) => (
+                  <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                    <p className="text-gray-600 text-sm">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Service Category 3 */}
+            <div className="space-y-8">
+              <div className="max-w-3xl">
+                <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Drain Services</span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
+                  Drain Cleaning & Unblocking
+                </h2>
+                <p className="text-base sm:text-lg text-gray-600">
+                  Professional drain unblocking using high-pressure jetting and advanced equipment. Clear blockages quickly and prevent future issues.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  {title: "Sink Unblocking", desc: "Clear kitchen and bathroom sink blockages"},
+                  {title: "Toilet Unblock", desc: "Resolve toilet blockages safely"},
+                  {title: "Main Drain Cleaning", desc: "Complete drain system cleaning"},
+                ].map((item, i) => (
+                  <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                    <p className="text-gray-600 text-sm">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Service Category 4 */}
+            <div className="space-y-8">
+              <div className="max-w-3xl">
+                <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Water Heating</span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
+                  Water Heater Installation & Repair
+                </h2>
+                <p className="text-base sm:text-lg text-gray-600">
+                  Installation and repair of all types of water heaters and boilers. From tank-style to tankless, we handle all makes and models.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  {title: "New Installation", desc: "Professional water heater installation"},
+                  {title: "Boiler Repair", desc: "Fast diagnosis and repair of boiler issues"},
+                  {title: "Maintenance Service", desc: "Regular servicing to extend lifespan"},
+                ].map((item, i) => (
+                  <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                    <p className="text-gray-600 text-sm">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Service Category 5 */}
+            <div className="space-y-8">
+              <div className="max-w-3xl">
+                <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">Bathroom Solutions</span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
+                  Bathroom Plumbing
+                </h2>
+                <p className="text-base sm:text-lg text-gray-600">
+                  Complete bathroom installations, renovations, and fixture replacements. From toilets to showers, we do it all with quality workmanship.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  {title: "Toilet Installation", desc: "New toilet fitting and repairs"},
+                  {title: "Shower Installation", desc: "Electric and mixer shower fitting"},
+                  {title: "Complete Bathroom", desc: "Full bathroom renovation services"},
+                ].map((item, i) => (
+                  <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                    <p className="text-gray-600 text-sm">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -49,10 +170,10 @@ export default function ServicesPage() {
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 text-center">
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
-                Don't See What You're Looking For?
+                Don&#39;t See What You&#39;re Looking For?
               </h2>
               <p className="text-gray-600 text-lg mb-8">
-                We offer a wide range of plumbing services. Contact us to discuss your specific requirements — we're sure we can help.
+                We offer a wide range of plumbing services. Contact us to discuss your specific requirements &mdash; we&#39;re sure we can help.
               </p>
               <Link href="/contact" className="btn btn-primary text-lg px-10 py-4">
                 Discuss Your Requirements
