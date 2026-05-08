@@ -41,9 +41,9 @@ export default function Page() {
         {/* Clean background for hero section */}
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
             {/* Left Content */}
-            <div className="lg:col-span-7 text-white">
+            <div className="lg:col-span-6 text-white">
               {/* Badge */}
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-8 animate-fade-in-up" role="status" aria-label="Emergency service availability">
                 <span className="relative flex h-2 w-2" aria-hidden="true">
@@ -99,10 +99,10 @@ export default function Page() {
             </div>
             
             {/* Right Side - Floating Stats Cards */}
-            <div className="hidden lg:block lg:col-span-5 relative">
-              <div className="relative w-full aspect-square max-w-md mx-auto">
+            <div className="hidden lg:block lg:col-span-6 relative">
+              <div className="relative w-full aspect-square max-w-lg mx-auto">
                 {/* Main Stats Card */}
-                <div className="absolute top-0 right-0 glass-dark rounded-2xl p-6 w-48 animate-float">
+                <div className="absolute top-1/4 right-0 md:right-4 lg:right-4 glass-dark rounded-2xl p-6 w-48 animate-float">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,7 +116,7 @@ export default function Page() {
                 </div>
                 
                 {/* Second Stats Card */}
-                <div className="absolute top-1/3 left-0 glass-dark rounded-2xl p-6 w-44 animate-float" style={{animationDelay: '0.5s'}}>
+                <div className="absolute top-1/3 left-0 md:left-4 lg:left-4 glass-dark rounded-2xl p-6 w-44 animate-float" style={{animationDelay: '0.5s'}}>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 bg-secondary rounded-xl flex items-center justify-center">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -130,7 +130,7 @@ export default function Page() {
                 </div>
                 
                 {/* Third Stats Card */}
-                <div className="absolute bottom-10 right-8 glass-dark rounded-2xl p-6 w-52 animate-float" style={{animationDelay: '1s'}}>
+                <div className="absolute bottom-1/4 right-0 md:right-4 lg:right-4 glass-dark rounded-2xl p-6 w-52 animate-float" style={{animationDelay: '1s'}}>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 bg-green-500 rounded-xl flex items-center justify-center">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -273,10 +273,10 @@ export default function Page() {
             </p>
           </div>
           
-          {/* Services Grid - Asymmetric Layout */}
+          {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {/* Service Card 1 - Featured */}
-            <div className="md:col-span-2 lg:col-span-2 service-card group">
+            <div className="service-card group">
               <div className="relative h-64 md:h-72 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=800&q=80"
@@ -399,7 +399,7 @@ export default function Page() {
             </div>
             
             {/* Service Card 5 */}
-            <div className="md:col-span-2 lg:col-span-2 service-card group">
+            <div className="service-card group">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80"
@@ -729,10 +729,8 @@ export default function Page() {
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}></div>
         
-        {/* Decorative Elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl"></div>
-        
+        {/* Decorative Elements - Removed per user request */}
+
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
             Ready to Fix Your Plumbing Issues?
