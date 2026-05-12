@@ -114,13 +114,13 @@ export default function RootLayout({
               
               {/* Desktop Navigation */}
               <div className="hidden lg:flex items-center gap-1">
-                <Link href="/" className="nav-link px-3 lg:px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors text-sm lg:text-base">
+                <Link href="/" className="nav-link px-3 lg:px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors text-sm lg:text-base text-slate-800">
                   Home
                 </Link>
-                <Link href="/services" className="nav-link px-3 lg:px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors text-sm lg:text-base">
+                <Link href="/services" className="nav-link px-3 lg:px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors text-sm lg:text-base text-slate-800">
                   Services
                 </Link>
-                <Link href="/contact" className="nav-link px-3 lg:px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors text-sm lg:text-base">
+                <Link href="/contact" className="nav-link px-3 lg:px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors text-sm lg:text-base text-slate-800">
                   Contact
                 </Link>
               </div>
