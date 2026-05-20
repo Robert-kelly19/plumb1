@@ -158,10 +158,10 @@ a {
    ============================================ */
 
 /* Font Imports via Google Fonts (add to layout) */
-/* Import: Playfair Display for headings, Inter for body */
+/* Import: Roboto for headings, Inter for body */
 
 .font-display {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 
 .font-body {
