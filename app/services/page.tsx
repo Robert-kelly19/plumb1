@@ -43,9 +43,9 @@ export default function ServicesPage() {
                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
                    Emergency Plumbing
                  </h2>
-                 <p className="text-base sm:text-lg text-gray-600">
-                   Available 24/7 for urgent plumbing issues. Our rapid response team arrives within 30 minutes to fix burst pipes, major leaks, and other emergencies.
-                 </p>
+                  <p className="text-base sm:text-lg text-gray-600">
+                    Available 24/7 for urgent plumbing issues. Our rapid response team arrives within 30 minutes to fix burst pipes, major leaks, flooding, and other emergencies that require immediate attention.
+                  </p>
                </div>
                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                  {[
@@ -71,9 +71,9 @@ export default function ServicesPage() {
                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
                    Leak Detection & Repair
                  </h2>
-                 <p className="text-base sm:text-lg text-gray-600">
-                   Fast and effective leak detection using advanced equipment. From dripping taps to hidden pipe leaks, we find and fix the problem.
-                 </p>
+                  <p className="text-base sm:text-lg text-gray-600">
+                    Fast and effective leak detection using advanced equipment and techniques. From dripping taps to hidden pipe leaks behind walls or under floors, we utilize thermal imaging and acoustic detection to precisely locate and fix the source of leaks before they cause extensive damage.
+                  </p>
                </div>
                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                  {[
@@ -99,9 +99,9 @@ export default function ServicesPage() {
                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
                    Drain Cleaning & Unblocking
                  </h2>
-                 <p className="text-base sm:text-lg text-gray-600">
-                   Professional drain unblocking using high-pressure jetting and advanced equipment. Clear blockages quickly and prevent future issues.
-                 </p>
+                  <p className="text-base sm:text-lg text-gray-600">
+                    Professional drain unblocking using high-pressure jetting, electro-mechanical cleaning, and advanced camera inspection. We clear blockages quickly in sinks, toilets, showers, and main drains while providing preventative maintenance to avoid future issues.
+                  </p>
                </div>
                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                  {[
@@ -127,9 +127,9 @@ export default function ServicesPage() {
                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
                    Water Heater Installation & Repair
                  </h2>
-                 <p className="text-base sm:text-lg text-gray-600">
-                   Installation and repair of all types of water heaters and boilers. From tank-style to tankless, we handle all makes and models.
-                 </p>
+                  <p className="text-base sm:text-lg text-gray-600">
+                    Expert installation, repair, and maintenance of all water heating systems including traditional tanks, tankless systems, combi boilers, and unvented cylinders. We ensure optimal efficiency and safety compliance for your home or business.
+                  </p>
                </div>
                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                  {[
@@ -155,9 +155,9 @@ export default function ServicesPage() {
                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
                    Bathroom Plumbing
                  </h2>
-                 <p className="text-base sm:text-lg text-gray-600">
-                   Complete bathroom installations, renovations, and fixture replacements. From toilets to showers, we do it all with quality workmanship.
-                 </p>
+                  <p className="text-base sm:text-lg text-gray-600">
+                    Complete bathroom transformations from minor fixture replacements to full renovations. We handle toilet installations, shower fittings, tiling, ventilation, and all plumbing work with meticulous attention to detail and waterproofing standards.
+                  </p>
                </div>
                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                  {[

@@ -3,8 +3,9 @@ import Link from "next/link";
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Rapid Plumbing - Fast & Reliable Plumbing Services in London",
-  description: "Professional plumbing services in London. Emergency plumbing, leak repair, drain cleaning, and more. 24/7 service available.",
+  title: "Rapid Plumbing - Expert Plumbing Services London | 24/7 Emergency",
+  description: "Professional plumbing services in London. Emergency plumbing, leak detection, drain cleaning, water heater installation & bathroom plumbing. Gas Safe registered. Free quotes. Call 020 7946 0123.",
+  keywords: "plumbers London, emergency plumber London, leak detection London, drain cleaning London, water heater installation, bathroom plumbing, Gas Safe registered plumbers"
 };
 
 export default function RootLayout({
@@ -19,45 +20,99 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet" />
         
-        {/* Structured Data for Local Business */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Plumber",
-              "name": "Rapid Plumbing",
-              "description": "Professional plumbing services in London including emergency repairs, leak detection, drain cleaning, and installations.",
-              "url": "https://rapidplumbing.co.uk",
-              "telephone": "+44-20-7946-0123",
-              "email": "info@rapidplumbing.co.uk",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "London",
-                "addressCountry": "GB"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "51.5074",
-                "longitude": "-0.1278"
-              },
-              "areaServed": "London",
-              "serviceType": ["Emergency Plumbing", "Leak Repair", "Drain Cleaning", "Pipe Repair", "Water Heater Installation", "Bathroom Plumbing"],
-              "priceRange": "££",
-              "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-16:00",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "5000"
-              },
-              "hasCredential": {
-                "@type": "EducationalOccupationalCredential",
-                "name": "Gas Safe Register",
-                "credentialCategory": "license"
-              }
-            })
-          }}
-        />
+         {/* Structured Data for Local Business */}
+         <script
+           type="application/ld+json"
+           dangerouslySetInnerHTML={{
+             __html: JSON.stringify({
+               "@context": "https://schema.org",
+               "@type": "Plumber",
+               "name": "Rapid Plumbing",
+               "description": "Expert plumbing services in London including emergency repairs, leak detection, drain cleaning, water heater installation, bathroom plumbing, and boiler services. Gas Safe registered with 15+ years experience.",
+               "url": "https://rapidplumbing.co.uk",
+               "telephone": "+44-20-7946-0123",
+               "email": "info@rapidplumbing.co.uk",
+               "address": {
+                 "@type": "PostalAddress",
+                 "addressLocality": "London",
+                 "addressCountry": "GB"
+               },
+               "geo": {
+                 "@type": "GeoCoordinates",
+                 "latitude": "51.5074",
+                 "longitude": "-0.1278"
+               },
+               "areaServed": [
+                 "City of London",
+                 "Camden",
+                 "Islington",
+                 "Hackney",
+                 "Tower Hamlets",
+                 "Southwark",
+                 "Lambeth",
+                 "Westminster",
+                 "Kensington and Chelsea",
+                 "Hammersmith and Fulham",
+                 "Wandsworth",
+                 "Haringey",
+                 "Enfield",
+                 "Waltham Forest",
+                 "Redbridge",
+                 "Barking and Dagenham",
+                 "Havering",
+                 "Newham",
+                 "Bexley",
+                 "Bromley",
+                 "Croydon",
+                 "Sutton",
+                 "Kingston upon Thames",
+                 "Merton",
+                 "Richmond upon Thames",
+                 "Hounslow",
+                 "Ealing",
+                 "Brent",
+                 "Harrow",
+                 "Barnet"
+               ],
+               "serviceType": [
+                 "Emergency Plumbing",
+                 "Leak Detection and Repair",
+                 "Drain Cleaning and Unblocking",
+                 "Pipe Repair and Replacement",
+                 "Water Heater Installation and Repair",
+                 "Boiler Installation and Repair",
+                 "Bathroom Plumbing and Installation",
+                 "Kitchen Plumbing",
+                 "Gas Safety Certificates",
+                 "Pipe Insulation",
+                 "Water Pressure Regulation",
+                 "Fixture Installation"
+               ],
+               "priceRange": "££",
+               "openingHours": [
+                 "Mo-Fr 08:00-18:00",
+                 "Sa 09:00-16:00",
+                 "Su 10:00-14:00"
+               ],
+               "aggregateRating": {
+                 "@type": "AggregateRating",
+                 "ratingValue": "4.9",
+                 "reviewCount": "5000"
+               },
+               "hasCredential": {
+                 "@type": "EducationalOccupationalCredential",
+                 "name": "Gas Safe Register",
+                 "credentialCategory": "license"
+               },
+               "founder": {
+                 "@type": "Person",
+                 "name": "John Smith"
+               },
+               "foundingDate": "2009",
+               "employeeCount": "25"
+             })
+           }}
+         />
       </head>
       <body className="antialiased font-body">
         {/* Top Contact Bar - Hidden on mobile, visible on larger screens */}

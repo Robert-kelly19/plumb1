@@ -224,12 +224,12 @@ export default function Page() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
                 Your Trusted <span className="text-accent">London Plumbers</span>
               </h2>
-              <p className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed">
-                At Rapid Plumbing, we understand that plumbing issues can occur at any time. That's why we offer prompt, professional services across London. Whether it's a leaking pipe, blocked drain, or a new water heater installation, our experienced team is ready to help.
-              </p>
-              <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
-                We pride ourselves on transparent pricing, quality workmanship, and excellent customer service. All our plumbers are fully licensed and insured, giving you peace of mind with every job we undertake.
-              </p>
+               <p className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed">
+                 With over 15 years of serving London homes and businesses, Rapid Plumbing delivers expert solutions for every plumbing challenge. Our certified team combines traditional craftsmanship with modern techniques to ensure lasting results.
+               </p>
+               <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
+                 We're committed to transparent pricing, exceptional workmanship, and 5-star customer service. All our plumbers are Gas Safe registered, fully insured, and dedicated to solving your plumbing issues right the first time.
+               </p>
               
               {/* Trust Features */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">

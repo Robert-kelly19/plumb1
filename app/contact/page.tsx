@@ -31,9 +31,9 @@ export default function ContactPage() {
           <h1 id="contact-hero-heading" className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white tracking-tight">
             Get in Touch
           </h1>
-          <p className="text-base sm:text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Ready to fix your plumbing issues? We're here to help with fast, reliable service across London.
-          </p>
+           <p className="text-base sm:text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+             Get expert plumbing solutions from London's trusted team. We're available 24/7 for emergencies and scheduled appointments across all London boroughs.
+           </p>
         </div>
       </section>
 
