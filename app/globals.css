@@ -742,7 +742,7 @@ select.input {
 .nav-link {
   position: relative;
   font-weight: 500;
-  color: var(--gray-700);
+  color: #334155;
   padding: 0.5rem 1rem;
   transition: color var(--transition-base);
 }
@@ -754,13 +754,13 @@ select.input {
   left: 50%;
   width: 0;
   height: 2px;
-  background: var(--accent);
+  background: #3b82f6;
   transition: all var(--transition-base);
   transform: translateX(-50%);
 }
 
 .nav-link:hover {
-  color: var(--primary);
+  color: #1e293b;
 }
 
 .nav-link:hover::after {
@@ -768,7 +768,7 @@ select.input {
 }
 
 .nav-link.active {
-  color: var(--accent);
+  color: #3b82f6;
 }
 
 .nav-link.active::after {
