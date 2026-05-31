@@ -218,18 +218,21 @@ export default function RootLayout({
                 </Link>
               </div>
               
-              {/* Desktop Navigation */}
-              <div className="hidden lg:flex items-center gap-1">
-                <Link href="/" className="nav-link px-3 lg:px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors text-sm lg:text-base text-gray-900">
-                  Home
-                </Link>
-                <Link href="/services" className="nav-link px-3 lg:px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors text-sm lg:text-base text-gray-900">
-                  Services
-                </Link>
-                <Link href="/contact" className="nav-link px-3 lg:px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors text-sm lg:text-base text-gray-900">
-                  Contact
-                </Link>
-              </div>
+               {/* Desktop Navigation */}
+               <div className="hidden lg:flex items-center gap-1">
+                 <Link href="/" className="nav-link px-3 lg:px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors text-sm lg:text-base text-gray-900">
+                   Home
+                 </Link>
+                 <Link href="/services" className="nav-link px-3 lg:px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors text-sm lg:text-base text-gray-900">
+                   Services
+                 </Link>
+                 <Link href="/about" className="nav-link px-3 lg:px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors text-sm lg:text-base text-gray-900">
+                   About
+                 </Link>
+                 <Link href="/contact" className="nav-link px-3 lg:px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors text-sm lg:text-base text-gray-900">
+                   Contact
+                 </Link>
+               </div>
 
               {/* CTA Button */}
               <div className="hidden lg:block">
@@ -275,17 +278,20 @@ export default function RootLayout({
                 </svg>
 </button>
             </div>
-            <div className="space-y-2">
-              <Link href="/" className="block px-4 py-3 rounded-xl hover:bg-gray-50 text-lg font-medium text-gray-900 transition-colors mobile-nav-link">
-                Home
-              </Link>
-              <Link href="/services" className="block px-4 py-3 rounded-xl hover:bg-gray-50 text-lg font-medium text-gray-900 transition-colors mobile-nav-link">
-                Services
-              </Link>
-              <Link href="/contact" className="block px-4 py-3 rounded-xl hover:bg-gray-50 text-lg font-medium text-gray-900 transition-colors mobile-nav-link">
-                Contact
-              </Link>
-            </div>
+             <div className="space-y-2">
+               <Link href="/" className="block px-4 py-3 rounded-xl hover:bg-gray-50 text-lg font-medium text-gray-900 transition-colors mobile-nav-link">
+                 Home
+               </Link>
+               <Link href="/services" className="block px-4 py-3 rounded-xl hover:bg-gray-50 text-lg font-medium text-gray-900 transition-colors mobile-nav-link">
+                 Services
+               </Link>
+               <Link href="/about" className="block px-4 py-3 rounded-xl hover:bg-gray-50 text-lg font-medium text-gray-900 transition-colors mobile-nav-link">
+                 About
+               </Link>
+               <Link href="/contact" className="block px-4 py-3 rounded-xl hover:bg-gray-50 text-lg font-medium text-gray-900 transition-colors mobile-nav-link">
+                 Contact
+               </Link>
+             </div>
             <div className="mt-8 pt-8 border-t border-gray-100">
               <a href="tel:02079460123" className="flex items-center gap-3 text-gray-600 mb-4">
                 <div className="w-10 h-10 bg-accent/10 rounded-full flex items-center justify-center">
@@ -336,24 +342,28 @@ export default function RootLayout({
                 </div>
               </div>
 
-              {/* Quick Links */}
-              <div>
-                <h3 className="footer-title text-lg">Quick Links</h3>
-                <ul className="space-y-3">
-                  <li><Link href="/" className="footer-link flex items-center gap-2 group">
-                    <span className="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    Home
-                  </Link></li>
-                  <li><Link href="/services" className="footer-link flex items-center gap-2 group">
-                    <span className="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    Services
-                  </Link></li>
-                  <li><Link href="/contact" className="footer-link flex items-center gap-2 group">
-                    <span className="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    Contact Us
-                  </Link></li>
-                </ul>
-              </div>
+               {/* Quick Links */}
+               <div>
+                 <h3 className="footer-title text-lg">Quick Links</h3>
+                 <ul className="space-y-3">
+                   <li><Link href="/" className="footer-link flex items-center gap-2 group">
+                     <span className="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                     Home
+                   </Link></li>
+                   <li><Link href="/services" className="footer-link flex items-center gap-2 group">
+                     <span className="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                     Services
+                   </Link></li>
+                   <li><Link href="/about" className="footer-link flex items-center gap-2 group">
+                     <span className="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                     About Us
+                   </Link></li>
+                   <li><Link href="/contact" className="footer-link flex items-center gap-2 group">
+                     <span className="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                     Contact Us
+                   </Link></li>
+                 </ul>
+               </div>
 
               {/* Services */}
               <div>
