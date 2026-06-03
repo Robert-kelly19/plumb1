@@ -32,7 +32,7 @@ export default function ContactPage() {
             Get in Touch
           </h1>
            <p className="text-base sm:text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-             Get expert plumbing solutions from London's trusted team. We're available 24/7 for emergencies and scheduled appointments across all London boroughs.
+             Get expert plumbing solutions from London&apos;s trusted team. We&apos;re available 24/7 for emergencies and scheduled appointments across all London boroughs.
            </p>
         </div>
       </section>
@@ -45,8 +45,8 @@ export default function ContactPage() {
             <div className="lg:col-span-7">
               <div className="bg-white rounded-2xl p-6 sm:p-8 md:p-12 border border-slate-100 shadow-sm">
                 <div className="mb-8 sm:mb-10">
-                  <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Send us a message</h2>
-                  <p className="text-slate-500 text-base sm:text-lg">Fill out the form below and we'll get back to you within 24 hours.</p>
+                  <h2 id="contact-form-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Send us a message</h2>
+                  <p className="text-slate-500 text-base sm:text-lg">Fill out the form below and we&apos;ll get back to you within 24 hours.</p>
                 </div>
               
                 <form className="space-y-5 sm:space-y-6" id="contact-form" noValidate aria-labelledby="contact-form-heading">
@@ -282,7 +282,7 @@ export default function ContactPage() {
     Trusted by Londoners
   </h3>
   <p className="text-gray-600">
-    Don't just take our word for it. Here's what our satisfied customers have to say about our plumbing services.
+    Don&apos;t just take our word for it. Here&apos;s what our satisfied customers have to say about our plumbing services.
   </p>
 </div>
           
@@ -322,7 +322,7 @@ export default function ContactPage() {
                   ))}
                 </div>
                 <blockquote className="text-gray-700 mb-4 italic">
-                  "{testimonial.text}"
+                  &ldquo;{testimonial.text}&rdquo;
                 </blockquote>
                 <div className="flex items-center gap-3">
                   <img 
@@ -371,7 +371,7 @@ export default function ContactPage() {
     Frequently Asked Questions
   </h3>
   <p className="text-gray-600">
-    Have questions? We have answers. If you can't find what you're looking for, give us a call.
+    Have questions? We have answers. If you can&apos;t find what you&apos;re looking for, give us a call.
   </p>
 </div>
           
@@ -432,7 +432,7 @@ export default function ContactPage() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
 <div className="text-white text-center md:text-left">
   <h2 className="text-xl sm:text-2xl font-bold mb-2" style={{fontFamily: 'Playfair Display, serif'}}>Have a Plumbing Emergency?</h2>
-  <p className="text-gray-200">Call us now — we're available 24/7</p>
+   <p className="text-gray-200">Call us now — we&apos;re available 24/7</p>
 </div>
 <a href="tel:02079460123" className="btn btn-primary text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-4 animate-pulse-glow" aria-label="Call Rapid Plumbing: 020 7946 0123">
   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

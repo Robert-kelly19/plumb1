@@ -56,7 +56,7 @@ export default function Page() {
               {/* Headline */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-fade-in-up delay-100" style={{fontFamily: 'Playfair Display, serif'}}>
                 Expert Plumbing.{' '}
-                <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-yellow-500">London's Trusted.</span>
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-yellow-500">London&apos;s Trusted.</span>
               </h1>
               
               {/* Subheadline */}
@@ -228,7 +228,7 @@ export default function Page() {
                  With over 15 years of serving London homes and businesses, Rapid Plumbing delivers expert solutions for every plumbing challenge. Our certified team combines traditional craftsmanship with modern techniques to ensure lasting results.
                </p>
                <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
-                 We're committed to transparent pricing, exceptional workmanship, and 5-star customer service. All our plumbers are Gas Safe registered, fully insured, and dedicated to solving your plumbing issues right the first time.
+                  We&apos;re committed to transparent pricing, exceptional workmanship, and 5-star customer service. All our plumbers are Gas Safe registered, fully insured, and dedicated to solving your plumbing issues right the first time.
                </p>
               
               {/* Trust Features */}
@@ -543,7 +543,7 @@ export default function Page() {
               The <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-yellow-500">Rapid</span> Difference
             </h2>
             <p className="text-base sm:text-lg text-gray-300">
-              We're committed to providing the best plumbing services in London. Here's why thousands of customers trust us.
+              We&apos;re committed to providing the best plumbing services in London. Here&apos;s why thousands of customers trust us.
             </p>
           </div>
           
@@ -617,7 +617,7 @@ export default function Page() {
               What Our Customers Say
             </h2>
             <p className="text-base sm:text-lg text-gray-600">
-              Don't just take our word for it — here's what our satisfied customers have to say about our services.
+              Don&apos;t just take our word for it — here&apos;s what our satisfied customers have to say about our services.
             </p>
             {/* Verified Reviews Badge */}
             <div className="flex flex-wrap items-center justify-center gap-4 mt-6">
@@ -687,7 +687,7 @@ export default function Page() {
             ].map((testimonial, index) => (
               <div key={index} className="testimonial-card group">
                 {/* Quote Icon */}
-                <div className="absolute top-6 right-6 text-6xl text-gray-200 font-serif opacity-50">"</div>
+                 <div className="absolute top-6 right-6 text-6xl text-gray-200 font-serif opacity-50">&ldquo;</div>
                 
                 {/* Stars */}
                 <div className="flex items-center gap-1 mb-4">

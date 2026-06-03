@@ -33,7 +33,7 @@ export default function AboutPage() {
             About Rapid Plumbing
           </h1>
           <p className="text-base sm:text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            London's trusted emergency plumbing service with 15+ years of experience serving homes and businesses across all London boroughs.
+            London&apos;s trusted emergency plumbing service with 15+ years of experience serving homes and businesses across all London boroughs.
           </p>
         </div>
       </section>
@@ -48,10 +48,10 @@ export default function AboutPage() {
                   Our Story
                 </h2>
                 <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-                  Founded in 2009 by master plumber James Thompson, Rapid Plumbing began as a small family-run operation with a single van and a commitment to providing honest, reliable plumbing services to London residents. What started as a passion for solving plumbing problems has grown into London's most trusted emergency plumbing service.
+                  Founded in 2009 by master plumber James Thompson, Rapid Plumbing began as a small family-run operation with a single van and a commitment to providing honest, reliable plumbing services to London residents. What started as a passion for solving plumbing problems has grown into London&apos;s most trusted emergency plumbing service.
                 </p>
                 <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-                  Over the past 15 years, we've expanded our team to include over 50 Gas Safe registered plumbers while maintaining our core values of integrity, transparency, and exceptional customer service. Today, we serve thousands of London homes and businesses each year, providing everything from emergency repairs to complete bathroom installations.
+                  Over the past 15 years, we&apos;ve expanded our team to include over 50 Gas Safe registered plumbers while maintaining our core values of integrity, transparency, and exceptional customer service. Today, we serve thousands of London homes and businesses each year, providing everything from emergency repairs to complete bathroom installations.
                 </p>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900">Transparency</h3>
-                  <p className="text-slate-600 text-sm">We provide clear, upfront pricing with no hidden fees. You'll know exactly what to expect before we begin any work.</p>
+                  <p className="text-slate-600 text-sm">We provide clear, upfront pricing with no hidden fees. You&apos;ll know exactly what to expect before we begin any work.</p>
                 </div>
               </div>
             </div>
@@ -167,7 +167,7 @@ export default function AboutPage() {
               Meet Our Team
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
-              London's Finest Plumbers
+              London&apos;s Finest Plumbers
             </h2>
             <p className="text-gray-600">
               Our team consists of highly skilled, Gas Safe registered professionals dedicated to excellence in every job.
@@ -309,7 +309,7 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <h3 className="text-xl font-bold text-white mb-4">24/7 Emergency Response</h3>
                 <p className="text-slate-300">
-                  When disaster strikes, we're here. Our emergency team responds within 30 minutes to burst pipes, major leaks, and flooding emergencies across London.
+                  When disaster strikes, we&apos;re here. Our emergency team responds within 30 minutes to burst pipes, major leaks, and flooding emergencies across London.
                 </p>
               </div>
               
@@ -330,7 +330,7 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <h3 className="text-xl font-bold text-white mb-4">Eco-Friendly Practices</h3>
                 <p className="text-slate-300">
-                  We're committed to sustainable plumbing solutions that conserve water and reduce environmental impact while maintaining the highest standards.
+                  We&apos;re committed to sustainable plumbing solutions that conserve water and reduce environmental impact while maintaining the highest standards.
                 </p>
               </div>
             </div>
@@ -348,7 +348,7 @@ export default function AboutPage() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
             <div className="text-white text-center md:text-left">
               <h2 className="text-xl sm:text-2xl font-bold mb-2" style={{fontFamily: 'Playfair Display, serif'}}>Ready for Reliable Plumbing Service?</h2>
-              <p className="text-gray-300">Contact London's most trusted plumbers today</p>
+              <p className="text-gray-300">Contact London&apos;s most trusted plumbers today</p>
             </div>
             <a href="/contact" className="btn btn-primary text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-4 animate-pulse-glow">
               Get in Touch

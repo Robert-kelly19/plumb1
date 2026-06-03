@@ -441,7 +441,7 @@ export default function RootLayout({
                   </div>
                   <div>
                     <h4 className="text-white font-semibold text-base sm:text-lg">Plumbing Emergency?</h4>
-                    <p className="text-gray-400 text-sm">We're available 24/7 for urgent plumbing issues</p>
+                    <p className="text-gray-400 text-sm">We&apos;re available 24/7 for urgent plumbing issues</p>
                   </div>
                 </div>
                 <a href="tel:02079460123" className="btn btn-primary text-sm sm:text-base py-2 sm:py-3 px-4 sm:px-6 whitespace-nowrap">
