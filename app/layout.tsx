@@ -3,9 +3,56 @@ import Link from "next/link";
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://rapidplumbing.co.uk"),
   title: "Rapid Plumbing - Expert Plumbing Services London | 24/7 Emergency",
   description: "Professional plumbing services in London. Emergency plumbing, leak detection, drain cleaning, water heater installation & bathroom plumbing. Gas Safe registered. Free quotes. Call 020 7946 0123.",
-  keywords: "plumbers London, emergency plumber London, leak detection London, drain cleaning London, water heater installation, bathroom plumbing, Gas Safe registered plumbers"
+  keywords: "plumbers London, emergency plumber London, leak detection London, drain cleaning London, water heater installation, bathroom plumbing, Gas Safe registered plumbers",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1
+    }
+  },
+  verification: {
+    google: "your-google-verification-code",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+    userScalable: true
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    url: "https://rapidplumbing.co.uk",
+    siteName: "Rapid Plumbing",
+    title: "Rapid Plumbing - Expert Plumbing Services London | 24/7 Emergency",
+    description: "Professional plumbing services in London. Emergency plumbing, leak detection, drain cleaning, water heater installation & bathroom plumbing. Gas Safe registered. Free quotes.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Rapid Plumbing - Expert Plumbing Services London"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rapid Plumbing - Expert Plumbing Services London | 24/7 Emergency",
+    description: "Professional plumbing services in London. Emergency plumbing, leak detection, drain cleaning, water heater installation & bathroom plumbing. Gas Safe registered.",
+    creator: "@rapidplumbing",
+    images: ["/og-image.png"]
+  },
+  alternates: {
+    canonical: "https://rapidplumbing.co.uk"
+  }
 };
 
 export default function RootLayout({
