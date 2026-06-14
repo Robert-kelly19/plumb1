@@ -393,7 +393,7 @@ export default function RootLayout({
 
                {/* Quick Links */}
                <div>
-                 <h3 className="footer-title text-lg">Quick Links</h3>
+                 <h2 className="footer-title text-lg">Quick Links</h2>
                  <ul className="space-y-3">
                    <li><Link href="/" className="footer-link flex items-center gap-2 group">
                      <span className="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
