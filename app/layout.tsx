@@ -310,7 +310,7 @@ export default function RootLayout({
           </div>
         </nav>
 
-        {/* Mobile Menu Overlay */}
+      
         <div className="mobile-menu-overlay" id="mobile-overlay"></div>
         
         {/* Mobile Menu */}
@@ -391,7 +391,7 @@ export default function RootLayout({
                 </div>
               </div>
 
-               {/* Quick Links */}
+               
                <div>
                  <h2 className="footer-title text-lg">Quick Links</h2>
                  <ul className="space-y-3">
