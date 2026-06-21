@@ -192,7 +192,7 @@ export default function Page() {
                   <img 
                     src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80"
                     alt="Professional plumber at work"
-                    className="w-full h-80 md:h-96 lg:h-[500px] object-cover"
+                    className="w-full h-80 md:h-96 lg:h-125 object-cover"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent"></div>
                 </div>

@@ -244,7 +244,7 @@ export default function RootLayout({
         </div>
 
         {/* Skip Link for Accessibility */}
-        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-20 focus:left-4 focus:z-[100] focus:bg-accent focus:text-white focus:px-6 focus:py-3 focus:rounded-xl focus:shadow-xl focus:font-semibold focus:text-sm focus:backdrop-blur-sm">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-20 focus:left-4 focus:z-100 focus:bg-accent focus:text-white focus:px-6 focus:py-3 focus:rounded-xl focus:shadow-xl focus:font-semibold focus:text-sm focus:backdrop-blur-sm">
           Skip to main content
         </a>
 
