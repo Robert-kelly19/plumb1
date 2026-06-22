@@ -98,7 +98,7 @@ export default function Page() {
               </div>
             </div>
             
-            {/* Right Side - Floating Stats Cards */}
+            
             <div className="hidden lg:block lg:col-span-6 relative">
               <div className="relative w-full aspect-square max-w-lg mx-auto">
                 {/* Main Stats Card */}
@@ -115,7 +115,7 @@ export default function Page() {
                   <p className="text-xs text-gray-400 mt-1">Average arrival time</p>
                 </div>
                 
-                {/* Second Stats Card */}
+               
                 <div className="absolute top-1/3 left-0 md:left-4 lg:left-4 glass-dark rounded-2xl p-6 w-44 animate-float" style={{animationDelay: '0.5s'}}>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 bg-secondary rounded-xl flex items-center justify-center">
@@ -129,7 +129,7 @@ export default function Page() {
                   <p className="text-xs text-gray-400 mt-1">Industry expertise</p>
                 </div>
                 
-                {/* Third Stats Card */}
+              
                 <div className="absolute bottom-1/4 right-0 md:right-4 lg:right-4 glass-dark rounded-2xl p-6 w-52 animate-float" style={{animationDelay: '1s'}}>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 bg-green-500 rounded-xl flex items-center justify-center">
@@ -143,7 +143,7 @@ export default function Page() {
                   <p className="text-xs text-gray-400 mt-1">Satisfaction guaranteed on all work</p>
                 </div>
                 
-                {/* Main Icon */}
+                
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-linear-to-br from-accent to-yellow-600 flex items-center justify-center shadow-2xl">
                   <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
@@ -154,7 +154,7 @@ export default function Page() {
           </div>
         </div>
         
-        {/* Wave Divider */}
+        
         <div className="absolute bottom-0 left-0 right-0 wave-divider">
           <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-20 md:h-32">
             <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#fafafa"/>
@@ -162,7 +162,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Emergency CTA Banner - Sticky */}
+     
       <div id="emergency-banner" className="fixed top-0 left-0 right-0 z-40 bg-red-600 text-white py-2 px-4 transform -translate-y-full transition-transform duration-300 shadow-lg">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -178,9 +178,6 @@ export default function Page() {
         </div>
       </div>
 
-      {/* ============================================
-         INTRODUCTION SECTION - Editorial Style
-         ============================================ */}
       <section className="py-20 md:py-32 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
