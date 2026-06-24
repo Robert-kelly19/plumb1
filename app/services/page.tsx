@@ -245,7 +245,7 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* Service Category 5 */}
+            
             <div className="space-y-8">
               <div className="max-w-3xl mx-auto text-center">
                 <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">
@@ -326,9 +326,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ============================================
-          CTA SECTION
-          ============================================ */}
+     
       <section className="py-20 md:py-28 bg-primary-dark relative overflow-hidden">
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center">
           <h2
