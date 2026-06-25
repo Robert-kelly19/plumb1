@@ -194,7 +194,6 @@ export default function Page() {
                   <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent"></div>
                 </div>
                 
-                {/* Floating Badge */}
                 <div className="absolute -bottom-6 -right-4 md:right-8 bg-white rounded-xl shadow-xl p-4 flex items-center gap-3 animate-fade-in-up delay-300">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
                     <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -207,7 +206,7 @@ export default function Page() {
                   </div>
                 </div>
                 
-                {/* Experience Badge */}
+                
                 <div className="absolute -top-4 -left-4 bg-accent text-white rounded-xl shadow-xl p-4 animate-fade-in-up delay-200">
                   <p className="text-2xl font-bold">15+</p>
                   <p className="text-xs opacity-90">Years Experience</p>
@@ -215,7 +214,7 @@ export default function Page() {
               </div>
             </div>
             
-            {/* Content Side */}
+           
             <div className="lg:col-span-7">
               <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">About Us</span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
@@ -228,7 +227,7 @@ export default function Page() {
                   We&apos;re committed to transparent pricing, exceptional workmanship, and 5-star customer service. All our plumbers are Gas Safe registered, fully insured, and dedicated to solving your plumbing issues right the first time.
                </p>
               
-              {/* Trust Features */}
+             
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {[
                   {icon: "✓", text: "Fully Licensed & Insured", color: "bg-green-50"},
@@ -254,9 +253,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ============================================
-         SERVICES SECTION - Modern Card Design
-         ============================================ */}
+      
       <section className="py-20 md:py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
@@ -270,7 +267,7 @@ export default function Page() {
             </p>
           </div>
           
-          {/* Services Grid */}
+         
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {/* Service Card 1 - Featured */}
             <div className="service-card group">
