@@ -52,8 +52,6 @@ export default function Page() {
                 </span>
                 <span className="text-sm font-medium">24/7 Emergency Service Available</span>
               </div>
-              
-              
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-fade-in-up delay-100" style={{fontFamily: 'Playfair Display, serif'}}>
                 Expert Plumbing.{' '}
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-yellow-500">London&apos;s Trusted.</span>

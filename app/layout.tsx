@@ -213,7 +213,7 @@ export default function RootLayout({
           />
       </head>
       <body className="antialiased font-body">
-        {/* Top Contact Bar - Hidden on mobile, visible on larger screens */}
+        
         <div className="bg-linear-to-r from-primary to-primary-dark text-white py-2 sm:py-2.5 px-4 sm:px-6 hidden md:block shadow-sm">
           <div className="max-w-7xl mx-auto flex justify-between items-center text-xs sm:text-sm">
             <div className="flex items-center gap-4 sm:gap-8">

@@ -42,7 +42,7 @@ export default function ServicesPage() {
       <section className="py-20 md:py-28 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-16 lg:space-y-24">
-            {/* Service Category 1 */}
+            
             <div className="space-y-8">
               <div className="max-w-3xl mx-auto text-center">
                 <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">
