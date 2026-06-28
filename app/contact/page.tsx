@@ -169,7 +169,6 @@ export default function ContactPage() {
             </div>
 
             <div className="lg:col-span-5 space-y-6">
-              {/* Trust Signals */}
               <div className="bg-linear-to-r from-green-50 to-emerald-50 rounded-2xl p-6 border border-green-100">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
@@ -271,9 +270,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ============================================
-         TESTIMONIALS SECTION
-         ============================================ */}
+      
       <section className="py-16 md:py-24 bg-linear-to-br from-slate-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
@@ -360,9 +357,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ============================================
-         FAQ SECTION
-         ============================================ */}
+      
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
