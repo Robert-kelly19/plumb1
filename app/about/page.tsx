@@ -14,7 +14,6 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main id="main-content">
-      {/* Hero Section */}
       <section className="relative py-24 md:py-36 bg-slate-900 overflow-hidden" aria-labelledby="about-hero-heading">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-linear-to-br from-slate-900 via-slate-800 to-slate-900"></div>
@@ -38,7 +37,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Story Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
@@ -80,7 +78,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Values Section */}
       <section className="py-16 md:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
