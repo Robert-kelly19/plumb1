@@ -69,8 +69,8 @@ export default function AboutPage() {
                   <div className="text-sm text-slate-600">Projects Completed</div>
                 </div>
                 <div className="bg-slate-50 rounded-xl p-5">
-                  <div className="text-3xl font-bold text-amber-600">4.9/5</div>
-                  <div className="text-sm text-slate-600">Customer Rating</div>
+                  <div className="text-3xl font-bold text-amber-700">4.9/5</div>
+                  <div className="text-sm text-slate-700">Customer Rating</div>
                 </div>
               </div>
             </div>
