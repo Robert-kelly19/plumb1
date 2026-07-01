@@ -138,11 +138,11 @@ export default function AboutPage() {
               </div>
             </div>
             
-            {/* Customer Focus */}
+            
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                  <svg className="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg className="w-6 h-6 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
@@ -156,7 +156,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
+      
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
@@ -172,7 +172,7 @@ export default function AboutPage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Team Member 1 */}
+            
             <div className="bg-slate-50 rounded-2xl p-6 text-center">
               <div className="relative">
                 <img 
