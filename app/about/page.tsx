@@ -191,7 +191,7 @@ export default function AboutPage() {
               </p>
             </div>
             
-            {/* Team Member 2 */}
+            
             <div className="bg-slate-50 rounded-2xl p-6 text-center">
               <div className="relative">
                 <img 
@@ -210,7 +210,6 @@ export default function AboutPage() {
               </p>
             </div>
             
-            {/* Team Member 3 */}
             <div className="bg-slate-50 rounded-2xl p-6 text-center">
               <div className="relative">
                 <img 
@@ -238,7 +237,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Service Areas Section */}
+      
       <section className="py-16 md:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
@@ -254,7 +253,7 @@ export default function AboutPage() {
           </div>
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* North London */}
+            
             <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
               <h3 className="font-bold text-gray-900 mb-3">North London</h3>
               <p className="text-slate-600 text-sm">
