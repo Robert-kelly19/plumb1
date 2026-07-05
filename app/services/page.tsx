@@ -319,7 +319,7 @@ export default function ServicesPage() {
                 href="/contact"
                 className="btn btn-primary text-lg px-10 py-4"
               >
-                Discuss Your Requirements
+                Discuss Your Requirement
               </Link>
             </div>
           </div>
