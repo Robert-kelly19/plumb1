@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Plumbing Services London - Emergency & Installation | Rapid Plumbing",
   description:
-    "Comprehensive plumbing services in London including emergency repairs, leak detection, drain cleaning, water heaters & bathroom installations. Gas Safe registered plumbers.",
+    "Comprehensive plumbing services in London including emergency repairs, leak detection, drain cleaning, water heaters & bathroom installations. Gas Safe registered plumbers., boiler servicing, and maintenance. Contact us for a free quote today.",
   keywords:
     "plumbing services London, emergency plumbing, leak repair, drain cleaning, water heater installation, bathroom plumbing",
   openGraph: {
