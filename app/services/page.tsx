@@ -27,7 +27,7 @@ export default function ServicesPage() {
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-white"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            Professional{" "}
+            Professional
             <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-yellow-500">
               Plumbing Services
             </span>
