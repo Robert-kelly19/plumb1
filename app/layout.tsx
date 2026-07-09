@@ -67,7 +67,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet" />
         
-          {/* Enhanced Structured Data for Local Business */}
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -243,16 +242,16 @@ export default function RootLayout({
           </div>
         </div>
 
-        {/* Skip Link for Accessibility */}
+        
         <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-20 focus:left-4 focus:z-100 focus:bg-accent focus:text-white focus:px-6 focus:py-3 focus:rounded-xl focus:shadow-xl focus:font-semibold focus:text-sm focus:backdrop-blur-sm">
           Skip to main content
         </a>
 
-        {/* Navigation */}
+        
         <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200/50 shadow-sm transition-all duration-300" id="main-nav">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-18 sm:h-20 transition-all duration-300" id="nav-content">
-              {/* Logo */}
+              
               <div className="shrink-0">
                 <Link href="/" className="flex items-center gap-2 sm:gap-3 group">
                   <div className="w-9 h-9 sm:w-10 lg:w-11 bg-linear-to-br from-accent to-accent-light rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300 ring-2 ring-white/20">
@@ -267,7 +266,7 @@ export default function RootLayout({
                 </Link>
               </div>
               
-                {/* Desktop Navigation */}
+                
                 <div className="hidden lg:flex items-center gap-1">
                   <Link href="/" className="nav-link px-4 py-2.5 rounded-xl hover:bg-gray-50 transition-all duration-200 text-sm lg:text-base text-gray-700 font-medium hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-accent after:scale-x-0 hover:after:scale-x-100 after:transition-transform">
                     Home
