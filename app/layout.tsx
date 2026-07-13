@@ -310,9 +310,7 @@ export default function RootLayout({
         </nav>
 
       
-        <div className="mobile-menu-overlay" id="mobile-overlay"></div>
-        
-        {/* Mobile Menu */}
+      
         <div className="mobile-menu" id="mobile-menu">
           <div className="p-6">
             <div className="flex justify-between items-center mb-8">
@@ -412,7 +410,7 @@ export default function RootLayout({
                  </ul>
                </div>
 
-              {/* Services */}
+              
               <div>
                 <h3 className="footer-title text-lg">Our Services</h3>
                 <ul className="space-y-3">
@@ -435,7 +433,7 @@ export default function RootLayout({
                 </ul>
               </div>
 
-              {/* Contact Info */}
+              
               <div>
                 <h3 className="footer-title text-lg">Contact Us</h3>
                 <ul className="space-y-4">
@@ -477,7 +475,7 @@ export default function RootLayout({
               </div>
 </div>
 
-            {/* Emergency Banner */}
+            
             <div className="mt-10 sm:mt-12 bg-linear-to-r from-accent/20 to-transparent rounded-2xl p-5 sm:p-6 md:p-8 border border-accent/20">
               <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                 <div className="flex items-center gap-3 sm:gap-4">
@@ -500,7 +498,7 @@ export default function RootLayout({
               </div>
             </div>
 
-            {/* Bottom Bar */}
+           
             <div className="footer-bottom flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
               <p className="text-gray-400 text-sm text-center md:text-left">
                 &copy; {new Date().getFullYear()} Rapid Plumbing. All rights reserved.
@@ -514,7 +512,7 @@ export default function RootLayout({
           </div>
         </footer>
 
-        {/* Mobile Menu Scripts */}
+        
         <script dangerouslySetInnerHTML={{__html: `
           (function() {
             const menuBtn = document.getElementById('mobile-menu-btn');
@@ -546,7 +544,7 @@ export default function RootLayout({
           })();
         `}} />
 
-        {/* Scroll-triggered Animations & Sticky Header */}
+        
         <script dangerouslySetInnerHTML={{__html: `
           (function() {
             // Sticky Header Effect
