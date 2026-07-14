@@ -456,7 +456,7 @@ export default function RootLayout({
                     </div>
                     <div>
                       <p className="text-white">info@rapidplumbing.co.uk</p>
-                      <p className="text-sm text-gray-400">We respond within 24hrs</p>
+                      <p className="text-sm text-gray-600">We respond within 24hrs</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
