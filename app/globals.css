@@ -1,32 +1,29 @@
 @import "tailwindcss";
 
-/* ============================================
-   RAPID PLUMBING - PREMIUM DESIGN SYSTEM
-   ============================================ */
+
 
 @theme {
-  /* Light Theme (default) */
   --background: #fafafa;
   --background-elevated: #ffffff;
   --foreground: #1e293b;
   --foreground-muted: #64748b;
   --foreground-light: #94a3b8;
   
-  /* Primary - Deep Slate */
+
   --primary: #1e293b;
   --primary-light: #334155;
   --primary-dark: #0f172a;
   
-  /* Accent - Blue */
+ 
   --accent: #3b82f6;
   --accent-light: #60a5fa;
   --accent-dark: #2563eb;
   
-  /* Secondary - Soft Teal */
+ 
   --secondary: #0d9488;
   --secondary-light: #14b8a6;
   
-  /* Neutrals */
+ 
   --white: #ffffff;
   --gray-50: #f8fafc;
   --gray-100: #f1f5f9;
