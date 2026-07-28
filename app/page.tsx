@@ -27,24 +27,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main>
-      {/* ============================================
-         HERO SECTION - Premium Dark Theme
-         ============================================ */}
+     
       <section className="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden bg-primary-dark">
-        {/* Background Pattern */}
         <div className="absolute inset-0 opacity-30">
           <div className="absolute inset-0" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}></div>
         </div>
         
-        {/* Clean background for hero section */}
+       
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
-            {/* Left Content */}
             <div className="lg:col-span-6 text-white">
-              {/* Badge */}
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-8 animate-fade-in-up" role="status" aria-label="Emergency service availability">
                 <span className="relative flex h-2 w-2" aria-hidden="true">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
